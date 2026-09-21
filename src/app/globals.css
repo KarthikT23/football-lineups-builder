@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Oswald', 'Arial Narrow', sans-serif;
+  font-weight: 300;
+}
+
+@layer components {
+  /* Shared toolbar-button look (shuffle / pool / share / pitch / reset buttons). */
+  .btn-outline {
+    @apply rounded border border-paneledge bg-ink px-3 py-1.5 text-sm text-chalk transition-colors hover:border-amber;
+  }
+}
